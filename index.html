@@ -1218,8 +1218,8 @@
       refreshRemainingCodes();
     }
 
-    function normalizeDisplayCodeType(text) {
-      return String(text || '').replace('Cat4K');
+      function normalizeDisplayCodeType(text) {
+        return String(text || '').replace(/Cat4K|Duck|Dofin/g, 'Cat4K');
 }
     }
 
