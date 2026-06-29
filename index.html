@@ -1958,8 +1958,7 @@
         .replace(/'/g, '&#039;');
     }
 
-     function loadStockCheck() {
-         function getMenuPages() {
+    function getMenuPages() {
       const pages = [document.getElementById('redeemPanel')];
       if (currentUser && currentUser.admin) {
         document.querySelectorAll('#adminPanel .admin-section').forEach(function(sec) {
@@ -2008,14 +2007,7 @@
         if (buttons[i]) buttons[i].classList.toggle('active', page.id === id);
       });
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }  
-    
-    
-    function loadStockCheck() {
-      if (!currentUser || !currentUser.admin) {
-        showError('เฉพาะแอดมินเท่านั้นที่สามารถเช็คสต็อกได้');
-        return;
-        
+    }
   </script>
 </body>
 </html>
