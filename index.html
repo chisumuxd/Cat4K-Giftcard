@@ -711,28 +711,29 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-}
-.menu-nav::-webkit-scrollbar { display: none; }
-.menu-nav .menu-btn {
-  width: auto;
-  margin-top: 0;
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 11px 14px;
-  border-radius: 13px;
-  font-size: 14px;
-  font-weight: 800;
-  white-space: nowrap;
-  background: transparent;
-  color: #5a7fa8;          /* แทน --duck-muted */
-  border: none;
-  box-shadow: none;
-  transition: 0.16s ease;
-}
-.menu-nav .menu-btn .menu-icon { font-size: 18px; line-height: 1; }
-.menu-nav .menu-btn .menu-text {
+    
+    }
+    .menu-nav::-webkit-scrollbar { display: none; }
+    .menu-nav .menu-btn {
+    width: auto;
+    margin-top: 0;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 14px;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: 800;
+    white-space: nowrap;
+    background: transparent;
+    color: #5a7fa8;          /* แทน --duck-muted */
+    border: none;
+    box-shadow: none;
+    transition: 0.16s ease;
+    }
+  .menu-nav .menu-btn .menu-icon { font-size: 18px; line-height: 1; }
+  .menu-nav .menu-btn .menu-text {
   max-width: 0;
   opacity: 0;
   overflow: hidden;
@@ -1276,6 +1277,7 @@
 
       updateTypeOptionUI();
       refreshRemainingCodes();
+      buildMenuNav();
     }
 
     function normalizeDisplayCodeType(text) {
@@ -1308,7 +1310,6 @@
     function onGiftTypeChange() {
       updateTypeOptionUI();
       refreshRemainingCodes();
-      buildMenuNav();
     }
 
     function setDefaultSummaryMonth() {
